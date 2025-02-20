@@ -5,8 +5,10 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
-# MongoDB configuration
-client = MongoClient('mongodb+srv://<username>:<password>@mongodb-dcf69aeb-oa8133ac6.database.cloud.ovh.net/admin?replicaSet=replicaset&tls=true')
+# MongoDB configuration # Use the one you need
+client = MongoClient('mongodb+srv://<username>:<password>@mongodbxadasd/admin?replicaSet=replicaset&tls=true')
+#client = MongoClient ('mongodb://localhost:27017')
+
 db = client['users_db']
 collection = db['users']
 
